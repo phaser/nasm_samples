@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.8)
+PROJECT (nasm_samples)
+set (CMAKE_ASM_NASM_OBJECT_FORMAT "macho")
+enable_language (ASM_NASM)
+file (GLOB_RECURSE SOURCES "source/*")
+add_executable(nasm_samples ${SOURCES})
